@@ -25,6 +25,7 @@ img{
 
 body{
     font-family: "Roboto";
+    background-color: lightgray;
 }
 header{
     position: fixed;
@@ -120,30 +121,96 @@ main{
     object-fit: contain;
 }
 
+.home-btns-combo button{
+    background: var(--button-color-alt);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: small;
+    padding: 0.5rem;
+    
+}
+.home-btns-combo{
+    right: calc(85% - 1rem);
+}
+
 .products-container{
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .products-list{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    justify-content: space-between;
+    gap: 0.5rem;
+    justify-content: space-evenly;
     align-items: center;
 }
 .product-card{
-    width: 250px;
-    border: 1px solid black;
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    flex-direction: column;
+}
+.product-card p{
+
+    font-size: 1.8rem;
+    color: var(--first-color);
+}
+.product-card button{
+    position: relative;
+    display: inline-block;
+    background: var(--button-color-alt);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
 }
 .product-img{
     width: 200px;
 }
 
+
+
 footer{
     padding: 3rem 1rem;
-    background-color: var(--container-color);
+   background-color: gray;
+   justify-content: center;
+   align-items: center;
+  
+ 
 }
 
+.page-info{
+
+    list-style: none;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.page-info li{
+    text-decoration: none;   color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
 
 
 /*---------Vista del carrito-----------*/

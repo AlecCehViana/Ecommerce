@@ -110,10 +110,10 @@ function mostrarProductos() {
 }
 
 
-function agregarProducto( producto ){
+function agregarProducto( product ){
 
-    let resultadoFind = cart.find( item => item.id === producto.id )
-    resultadoFind = "actualizacion"
+    let resultadoFind = cart.find( item => item.id === product.id )
+   
 
     if( resultadoFind ){
         let stock = cart[resultadoFind.index].quantity
@@ -126,11 +126,11 @@ function agregarProducto( producto ){
         }
 
     }else{
-        producto.quantitySelected = 1
-        producto.index = cart.length
+        product.quantitySelected = 1
+        product.index = cart.length
 
 
-        cart.push(producto)
+        cart.push(product)
     }
 
     console.log(cart)
